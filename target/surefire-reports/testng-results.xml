@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8329" started-at="2020-03-24T07:56:10 IST" finished-at="2020-03-24T07:56:18 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8329" started-at="2020-03-24T07:56:10 IST" finished-at="2020-03-24T07:56:18 IST">
+      <class name="TestCases.TestCase003">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.TestCase003@3632be31]" name="setup" is-config="true" duration-ms="3" started-at="2020-03-24T07:56:15 IST" finished-at="2020-03-24T07:56:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.TestCase003@3632be31]" name="setUp" is-config="true" duration-ms="0" started-at="2020-03-24T07:56:15 IST" finished-at="2020-03-24T07:56:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validatePost()[pri:1, instance:TestCases.TestCase003@3632be31]" name="validatePost" duration-ms="1541" started-at="2020-03-24T07:56:15 IST" finished-at="2020-03-24T07:56:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePost -->
+        <test-method status="PASS" signature="validateResponse()[pri:2, instance:TestCases.TestCase003@3632be31]" name="validateResponse" duration-ms="799" started-at="2020-03-24T07:56:16 IST" finished-at="2020-03-24T07:56:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponse -->
+      </class> <!-- TestCases.TestCase003 -->
+      <class name="TestCases.TestCase004">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.TestCase004@5abca1e0]" name="setUp" is-config="true" duration-ms="1" started-at="2020-03-24T07:56:17 IST" finished-at="2020-03-24T07:56:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validatePut()[pri:0, instance:TestCases.TestCase004@5abca1e0]" name="validatePut" duration-ms="774" started-at="2020-03-24T07:56:17 IST" finished-at="2020-03-24T07:56:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePut -->
+      </class> <!-- TestCases.TestCase004 -->
+      <class name="TestCases.TestCase001">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.TestCase001@6fc6f14e]" name="setup" is-config="true" duration-ms="40" started-at="2020-03-24T07:56:10 IST" finished-at="2020-03-24T07:56:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.TestCase001@6fc6f14e]" name="setUp" is-config="true" duration-ms="335" started-at="2020-03-24T07:56:10 IST" finished-at="2020-03-24T07:56:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateEntireBody()[pri:0, instance:TestCases.TestCase001@6fc6f14e]" name="validateEntireBody" duration-ms="2287" started-at="2020-03-24T07:56:10 IST" finished-at="2020-03-24T07:56:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEntireBody -->
+        <test-method status="PASS" signature="validateGet()[pri:0, instance:TestCases.TestCase001@6fc6f14e]" name="validateGet" duration-ms="1655" started-at="2020-03-24T07:56:12 IST" finished-at="2020-03-24T07:56:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGet -->
+      </class> <!-- TestCases.TestCase001 -->
+      <class name="TestCases.TestCase002">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.TestCase002@56235b8e]" name="setup" is-config="true" duration-ms="4" started-at="2020-03-24T07:56:14 IST" finished-at="2020-03-24T07:56:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="postValidation()[pri:0, instance:TestCases.TestCase002@56235b8e]" name="postValidation" duration-ms="711" started-at="2020-03-24T07:56:14 IST" finished-at="2020-03-24T07:56:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postValidation -->
+      </class> <!-- TestCases.TestCase002 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

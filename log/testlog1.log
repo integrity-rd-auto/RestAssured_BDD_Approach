@@ -1,0 +1,4 @@
+2020-03-24 07:56:12,991 [main] INFO RestAssured_BDD_Approach - ######TestCase001 Starts######
+2020-03-24 07:56:14,645 [main] INFO RestAssured_BDD_Approach - ######TestCase001 Ends######
+2020-03-24 07:56:14,651 [main] INFO RestAssured_BDD_Approach - ######TestCase002 Starts######
+2020-03-24 07:56:15,367 [main] INFO RestAssured_BDD_Approach - ######validatePost() Starts######
