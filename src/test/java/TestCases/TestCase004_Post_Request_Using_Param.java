@@ -10,7 +10,7 @@ import java.util.Map;
 
 import io.restassured.RestAssured;
 
-public class TestCase004 {
+public class TestCase004_Post_Request_Using_Param {
 
 	Map<Object, Object> map = new HashMap<Object, Object>();
 
@@ -20,18 +20,17 @@ public class TestCase004 {
 
 		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1/update";
 		RestAssured.basePath = "/21";
-		map.put("name", "Tanmoy");
-		map.put("salary", "5000");
-		map.put("age", "20");
-
-	}
+		}
+		
 	@Test
 
-	public void validatePut() {
+	public void validatePutUsingParams() {
 
 		given()
+		.param("name", "Aaru")
+	    .param("salary", "1000")
+	    .param("age", "12")
 		.contentType("application/json")
-		.body(map)
 		.when()
 		.put()
 		.then()

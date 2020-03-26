@@ -12,7 +12,7 @@ import io.restassured.specification.RequestSpecification;
 
 import static org.hamcrest.Matchers.*;
 
-public class TestCase002 extends TestBase {
+public class TestCase002_Simple_Get_Request_Non_BDD extends TestBase {
 
 	@Test
 

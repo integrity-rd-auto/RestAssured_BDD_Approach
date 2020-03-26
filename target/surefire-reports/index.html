@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.TestCase005" hash-for-method="headValidation">headValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +117,26 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.TestCase002" hash-for-method="postValidation">postValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.TestCase005" hash-for-method="validate2">validate2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.TestCase005" hash-for-method="validate3">validate3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.TestCase006" hash-for-method="validate4">validate4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.TestCase005" hash-for-method="validate4">validate4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -127,7 +161,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.TestCase004" hash-for-method="validatePutUsingParams">validatePutUsingParams</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.TestCase003" hash-for-method="validateResponse">validateResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.TestCase006" hash-for-method="validateSpecificBody">validateSpecificBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.TestCase005" hash-for-method="validateSpecificBody">validateSpecificBody</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -142,6 +191,48 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.TestCase005</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="headValidation">
+                  </a> <!-- headValidation -->
+                  <span class="method-name">headValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [301]
+	at TestCases.TestCase005.headValidation(TestCase005.java:42)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.TestCase006</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate4">
+                  </a> <!-- validate4 -->
+                  <span class="method-name">validate4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSpecificBody">
+                  </a> <!-- validateSpecificBody -->
+                  <span class="method-name">validateSpecificBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -204,6 +295,42 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">TestCases.TestCase005</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate2">
+                  </a> <!-- validate2 -->
+                  <span class="method-name">validate2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate3">
+                  </a> <!-- validate3 -->
+                  <span class="method-name">validate3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate4">
+                  </a> <!-- validate4 -->
+                  <span class="method-name">validate4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSpecificBody">
+                  </a> <!-- validateSpecificBody -->
+                  <span class="method-name">validateSpecificBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">TestCases.TestCase004</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -212,6 +339,13 @@
                   <a name="validatePut">
                   </a> <!-- validatePut -->
                   <span class="method-name">validatePut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePutUsingParams">
+                  </a> <!-- validatePutUsingParams -->
+                  <span class="method-name">validatePutUsingParams</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,6 +369,8 @@
       &lt;class name=&quot;TestCases.TestCase002&quot;/&gt;
       &lt;class name=&quot;TestCases.TestCase003&quot;/&gt;
       &lt;class name=&quot;TestCases.TestCase004&quot;/&gt;
+      &lt;class name=&quot;TestCases.TestCase005&quot;/&gt;
+      &lt;class name=&quot;TestCases.TestCase006&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -248,7 +384,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -274,36 +410,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateEntireBody')
-data.setCell(0, 2, 'TestCases.TestCase001')
-data.setCell(0, 3, 2287);
+data.setCell(0, 1, 'headValidation')
+data.setCell(0, 2, 'TestCases.TestCase005')
+data.setCell(0, 3, 3032);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateGet')
-data.setCell(1, 2, 'TestCases.TestCase001')
-data.setCell(1, 3, 1655);
+data.setCell(1, 1, 'validateSpecificBody')
+data.setCell(1, 2, 'TestCases.TestCase005')
+data.setCell(1, 3, 3010);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validatePost')
-data.setCell(2, 2, 'TestCases.TestCase003')
-data.setCell(2, 3, 1541);
+data.setCell(2, 1, 'validate4')
+data.setCell(2, 2, 'TestCases.TestCase006')
+data.setCell(2, 3, 2960);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateResponse')
-data.setCell(3, 2, 'TestCases.TestCase003')
-data.setCell(3, 3, 799);
+data.setCell(3, 1, 'validate3')
+data.setCell(3, 2, 'TestCases.TestCase005')
+data.setCell(3, 3, 2952);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validatePut')
-data.setCell(4, 2, 'TestCases.TestCase004')
-data.setCell(4, 3, 774);
+data.setCell(4, 1, 'validate2')
+data.setCell(4, 2, 'TestCases.TestCase005')
+data.setCell(4, 3, 2906);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'postValidation')
-data.setCell(5, 2, 'TestCases.TestCase002')
-data.setCell(5, 3, 711);
+data.setCell(5, 1, 'validateEntireBody')
+data.setCell(5, 2, 'TestCases.TestCase001')
+data.setCell(5, 3, 2388);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validate4')
+data.setCell(6, 2, 'TestCases.TestCase005')
+data.setCell(6, 3, 2078);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateSpecificBody')
+data.setCell(7, 2, 'TestCases.TestCase006')
+data.setCell(7, 3, 2042);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateGet')
+data.setCell(8, 2, 'TestCases.TestCase001')
+data.setCell(8, 3, 1724);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validatePost')
+data.setCell(9, 2, 'TestCases.TestCase003')
+data.setCell(9, 3, 1695);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'postValidation')
+data.setCell(10, 2, 'TestCases.TestCase002')
+data.setCell(10, 3, 969);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateResponse')
+data.setCell(11, 2, 'TestCases.TestCase003')
+data.setCell(11, 3, 957);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validatePut')
+data.setCell(12, 2, 'TestCases.TestCase004')
+data.setCell(12, 3, 919);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validatePutUsingParams')
+data.setCell(13, 2, 'TestCases.TestCase004')
+data.setCell(13, 3, 886);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -336,56 +504,112 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">40 ms</span>
+                <span class="method-start">36 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateEntireBody</span>
-                <span class="method-start">382 ms</span>
+                <span class="method-start">390 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateGet</span>
-                <span class="method-start">2684 ms</span>
+                <span class="method-start">2794 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TestCase002</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4341 ms</span>
+                <span class="method-start">4519 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">postValidation</span>
-                <span class="method-start">4345 ms</span>
+                <span class="method-start">4527 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TestCase003</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">5057 ms</span>
+                <span class="method-start">5498 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">5060 ms</span>
+                <span class="method-start">5505 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validatePost</span>
-                <span class="method-start">5061 ms</span>
+                <span class="method-start">5505 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateResponse</span>
-                <span class="method-start">6604 ms</span>
+                <span class="method-start">7204 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TestCase004</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">7404 ms</span>
+                <span class="method-start">8163 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validatePut</span>
-                <span class="method-start">7405 ms</span>
+                <span class="method-start">8164 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatePutUsingParams</span>
+                <span class="method-start">9086 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.TestCase005</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9973 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9977 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">headValidation</span>
+                <span class="method-start">9978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate2</span>
+                <span class="method-start">13022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate3</span>
+                <span class="method-start">15928 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate4</span>
+                <span class="method-start">18882 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateSpecificBody</span>
+                <span class="method-start">20962 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.TestCase006</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">23974 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23979 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validate4</span>
+                <span class="method-start">23980 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateSpecificBody</span>
+                <span class="method-start">26942 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

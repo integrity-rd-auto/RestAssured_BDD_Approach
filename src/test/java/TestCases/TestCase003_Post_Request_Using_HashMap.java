@@ -15,7 +15,7 @@ import java.util.Map;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class TestCase003 extends TestBase{
+public class TestCase003_Post_Request_Using_HashMap extends TestBase{
 
 	// HashMap map = new HashMap();
 	Map<Object, Object> map = new HashMap<Object, Object>();
@@ -26,9 +26,9 @@ public class TestCase003 extends TestBase{
 
 		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
 		RestAssured.basePath = "/create";
-		map.put("name", "Tanmoy");
-		map.put("salary", "5000");
-		map.put("age", "20");
+		map.put("name", "Tanmoy1");
+		map.put("salary", "500");
+		map.put("age", "25");
 
 	}
 

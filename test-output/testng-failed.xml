@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.TestCase004">
+      <class name="TestCases.TestCase007_Post_Request_Using_Serialization_of_POJO_into_JSON_Request_Body_Object">
         <methods>
+          <include name="validatePost"/>
+          <include name="setup"/>
           <include name="setUp"/>
-          <include name="validateGet"/>
         </methods>
-      </class> <!-- TestCases.TestCase004 -->
+      </class> <!-- TestCases.TestCase007_Post_Request_Using_Serialization_of_POJO_into_JSON_Request_Body_Object -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
