@@ -1,8 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 30.201 s <<< FAILURE! - in TestSuite
-TestCases.TestCase005.headValidation  Time elapsed: 3.046 s  <<< FAILURE!
+Tests run: 18, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 33.492 s <<< FAILURE! - in TestSuite
+TestCases.TestCase001_Simple_Get_Request_BDD2.validateGet_Using_Body  Time elapsed: 1.312 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path args.empID doesn't match.
+Expected: is <100>
+  Actual: null
+
+	at TestCases.TestCase001_Simple_Get_Request_BDD2.validateGet_Using_Body(TestCase001_Simple_Get_Request_BDD2.java:59)
+
+TestCases.TestCase005_Parsing_Resource_Using_JsonPath.headValidation  Time elapsed: 1.69 s  <<< FAILURE!
 java.lang.AssertionError: expected [200] but found [301]
-	at TestCases.TestCase005.headValidation(TestCase005.java:42)
+	at TestCases.TestCase005_Parsing_Resource_Using_JsonPath.headValidation(TestCase005_Parsing_Resource_Using_JsonPath.java:37)
 

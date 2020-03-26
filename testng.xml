@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<listeners>
+<listeners>
 		<listener class-name="utility.Reporting" />
 	</listeners>
-	<test name="Test">
-		<classes>
-			<class name="TestCases.TestCase001" />
-			<class name="TestCases.TestCase002" />
-			<class name="TestCases.TestCase003" />
-			<class name="TestCases.TestCase004" />
-			<class name="TestCases.TestCase005" />
-			<class name="TestCases.TestCase006" />
-		</classes>
-	</test> <!-- Test -->
+  <test name="Test">
+    <classes>
+      <class name="TestCases.TestCase006_Parsing_Using_JsonPath_Complex_Resource"/>
+      <class name="TestCases.TestCase003_Post_Request_Using_JsonObject"/>
+      <class name="TestCases.TestCase003_Post_Request_Using_HashMap"/>
+      <class name="TestCases.TestCase007_Post_Request_Using_Serialization_of_POJO_into_JSON_Request_Body_Object"/>
+      <class name="TestCases.TestCase001_Simple_Get_Request_BDD2"/>
+      <class name="TestCases.TestCase002_Simple_Get_Request_Non_BDD"/>
+      <class name="TestCases.TestCase004_Post_Request_Using_Param"/>
+      <class name="TestCases.TestCase005_Parsing_Resource_Using_JsonPath"/>
+      <class name="TestCases.TestCase001_Simple_Get_Request_BDD"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

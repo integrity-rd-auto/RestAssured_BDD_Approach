@@ -6,13 +6,20 @@
   </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="TestCases.TestCase005">
+      <class name="TestCases.TestCase001_Simple_Get_Request_BDD2">
         <methods>
-          <include name="setup"/>
-          <include name="headValidation"/>
           <include name="setUp"/>
+          <include name="setup"/>
+          <include name="validateGet_Using_Body"/>
         </methods>
-      </class> <!-- TestCases.TestCase005 -->
+      </class> <!-- TestCases.TestCase001_Simple_Get_Request_BDD2 -->
+      <class name="TestCases.TestCase005_Parsing_Resource_Using_JsonPath">
+        <methods>
+          <include name="setUp"/>
+          <include name="headValidation"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.TestCase005_Parsing_Resource_Using_JsonPath -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

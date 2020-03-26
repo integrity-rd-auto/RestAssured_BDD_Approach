@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestCases.TestCase007_Post_Request_Using_Serialization_of_POJO_into_JSON_Request_Body_Object">
+      <class name="TestCases.TestCase001_Simple_Get_Request_BDD2">
         <methods>
-          <include name="validatePost"/>
-          <include name="setup"/>
           <include name="setUp"/>
+          <include name="setup"/>
+          <include name="validateGet_Using_Body"/>
         </methods>
-      </class> <!-- TestCases.TestCase007_Post_Request_Using_Serialization_of_POJO_into_JSON_Request_Body_Object -->
+      </class> <!-- TestCases.TestCase001_Simple_Get_Request_BDD2 -->
+      <class name="TestCases.TestCase005_Parsing_Resource_Using_JsonPath">
+        <methods>
+          <include name="setUp"/>
+          <include name="headValidation"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.TestCase005_Parsing_Resource_Using_JsonPath -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
